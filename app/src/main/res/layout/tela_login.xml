@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="fibestacio.mobile.iseven.fibestacio.MainActivity">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_dialog_email"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#0e4e83" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#0e99bf">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fiv"
+            android:layout_marginBottom="60sp"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:layout_width="424dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="20sp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="#ffffff"
+            android:textColor="#109abf"
+            android:hint="LOGIN" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="numberPassword"
+            android:layout_marginBottom="30sp"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:background="#ffffff"
+            android:textColor="#179dc1"
+            android:hint="SENHA" />
+
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="ENTRAR"
+            android:layout_marginTop="30dp"
+            android:onClick="Entrar"
+
+            android:id="@+id/entrar"
+            android:layout_gravity="center_horizontal"
+            android:background="#0c4d82"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
